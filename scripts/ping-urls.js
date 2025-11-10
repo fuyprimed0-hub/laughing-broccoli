@@ -1,17 +1,30 @@
 // ping-urls.js
 
 const URLS_FROM_ENV = [process.env.API_URL_1, process.env.API_URL_2].filter(Boolean);
-const URLs = URLS_FROM_ENV.length ? URLS_FROM_ENV : [
-  'https://boringaswell.netlify.app/api/all-get',
-  'https://boringaswell.netlify.app/api/all-get-2',
-  'https://boringaswell.netlify.app/api/all-get-2-old',
-    "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/all-get2-background",
+
+const URLs = [
+  "https://boringaswell.netlify.app/api/all-get",
+  "https://boringaswell.netlify.app/api/all-get-2",
+  "https://boringaswell.netlify.app/api/all-get-2-old",
+  "https://boringaswell.netlify.app/api/all-get",
+  "https://boringaswell.netlify.app/api/all-get-2",
+  "https://boringaswell.netlify.app/api/all-get-2-old",
+  "https://boringaswell.netlify.app/.netlify/functions/first-get-7rf-background",
+  "https://boringaswell.netlify.app/.netlify/functions/second-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/first-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/second-get-7rf-background",
+  "https://boringaswell.netlify.app/.netlify/functions/first-get-7rf-background",
+  "https://boringaswell.netlify.app/.netlify/functions/second-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/first-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/second-get-7rf-background",
+  "https://boringaswell.netlify.app/.netlify/functions/first-get-7rf-background",
+  "https://boringaswell.netlify.app/.netlify/functions/second-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/first-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/second-get-7rf-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/all-get2-background",
   "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/all-get2-oldway-background",
-    'https://boringaswell.netlify.app/api/all-get',
-  'https://boringaswell.netlify.app/api/all-get-2',
-  'https://boringaswell.netlify.app/api/all-get-2-old',
-      "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/all-get2-background",
-  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/all-get2-oldway-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/fifth-get-rc-background",
+  "https://luminous-boba-b62ad5.netlify.app/.netlify/functions/fourth-get-rc-background",
 ];
 
 // Requires Node 18+ (global fetch + AbortController)
